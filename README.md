@@ -17,4 +17,18 @@
 # Time Series Classification 과 Model  구현
 
 
-## Learinin Representations for Time Series Clustering
+## Learning Representations for Complete/Incomplete Time Series Clustering
+
+시계열 데이터를 딥러닝 모델을 통해 클러스터링하는 방법을 소개하는 논문이다.
+
+[1] Learning Representations for Time Series Clustering
+
+본 논문에서는 time series clustering을 위한 representation learning 방법론인 Deep Temporal Clustering Representation(DTCR)을 제안하였다. 본 방법론은 temporal reconstruction, K-means objective, real/fake sample의 auxiliary classification을 통합하여 cluster-specific time series representation을 학습한다.
+
+논문에서는 Encoder Decoder구조로 시계열 데이터를 재구성하는것을 목적으로 한다. 
+![image](https://github.com/sangse/Stock-AI/assets/145996429/57389885-95e7-4e3f-a809-76d5290eb102)
+
+여기서 Encoder block의  output값을 k-means clustering 해준다. Encoder Decoder 구조를 통해 시계열 데이터를 재구성하여 Encoder에서 나오는 적은 차원의 벡터가 시계열 데이터의 정보를 최대한 많이 담을수
+있게 학습하는것이 목적이다. 그 과정에서 Hidden layer와 clustering 결과값을 같이 활용해 이 데이터가 진짜인지 아닌지 분류해주는 모델도 활용한다. 그래서 모델의 Total Loss는 Reconsturction Loss와 Classification Loss의 합이 된다.
+
+## 
