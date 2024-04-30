@@ -41,10 +41,15 @@
 
 
 ## Encoder output's K-Means Clustering
-CNN 기반의 Encoder Decoder 모델을 학습 하고 Encoder Block을 통해 3차원 형태의 vector를 추출한다. 여기서 3차원 형태로 추출한 이유는 데이터를 시각화 하여서 군집을 이루는 것을 눈으로 확인 하기 위함이다. 생성된 군집의 시각화 아래 그림과 같다. 군집의 개수는 10으로 설정 하였고, 어느 정도 군집이 형성 되었다. Encoder block의 vector의 차원을 3->10 차원으로 변경하고 실험을 진행했다. 10차원의 vector가 10개의 군집을 형성하고 분류한 결과는 아래의 그림과 같다.
+### 3 dimension clustering view
+CNN 기반의 Encoder Decoder 모델을 학습 하고 Encoder Block을 통해 3차원 형태의 vector를 추출한다. 여기서 3차원 형태로 추출한 이유는 데이터를 시각화 하여서 군집을 이루는 것을 눈으로 확인 하기 위함이다. 생성된 군집의 시각화 아래 그림과 같다. 군집의 개수는 10으로 설정 하였고 3차원에서의 데이터는 산개정도가 있긴하지만 군집을 이루고 있는 것을 확인 할수 있다. 
 
 
 <p align="center">
   <img src="https://github.com/sangse/Stock-AI/assets/145996429/e08f2e09-ea29-4e34-aa32-ea5b933d7e82">
 </p>
+
+### clustering samples
+위의 군집들이 실제 가격측면 변동성을 잘 표현하는 가에대한 평가가 필요하다. 이것은 각 군집들의 표본들을 통해 확인할수 있다. 각 군집들의 5개의 표본을 시각화 한것은 다음 그림과 같다.
+
 
