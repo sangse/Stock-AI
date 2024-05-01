@@ -65,7 +65,9 @@ CNN 기반의 Encoder-Decoder 모델을 학습시킨 후, Encoder Block을 통�
 특히, 추세를 정확하게 파악하기 위해서는 충분한 길이의 데이터가 필요하다는 점이 중요합니다. 데이터 길이가 짧을 경우 추세는 단순히 평균값과 크게 다르지 않게 됩니다.
 
 현재 진행 중인 프로젝트는 단기적인 신규 상장주의 예측에 초점을 맞추고 있어, Dlinear 모델의 접근법이 적합하지 않을 수 있습니다. 그럼에도 불구하고, 현재 복잡한 모델들이 주목받는 연구 환경 속에서 Dlinear 모델이 기존 모델들의 성능을 능가한다는 점에서 이 모델을 실험해보았습니다.
-![image](https://github.com/sangse/Stock-AI/assets/145996429/c4e22464-b468-403d-aab0-b86ad54e9e5b)
+<p align = "center">
+ <img src="https://github.com/sangse/Stock-AI/assets/145996429/c4e22464-b468-403d-aab0-b86ad54e9e5b">
+</p>
 
 ## 1) 입력데이터를 Seasonaliy와 Trend로 바꿔주는 작업
 데이터의 길이는 총 24일 x feature 8 데이터로 구성했습니다.
